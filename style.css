@@ -1,0 +1,127 @@
+*{
+    font-family: "poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: #6EACDA;
+    color: #03346E;
+}
+nav li a p{
+    padding: 8px;
+    font-size: 18px;
+}
+nav li a p:hover{
+    background-color: #03346E;
+    color: #6EACDA;
+}
+footer{
+    background-color: #6EACDA;
+}
+
+.forHome{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+ 
+    z-index: -1;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.contianer{
+    width: 100%;
+    height: 150vh;
+    background-image: linear-gradient(rgba(12, 3, 51, .3), rgba(12, 3, 51, .3));
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #03346E;
+    margin-bottom: 50px;
+}
+.project{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-direction: column;
+    padding: 50px;
+}
+.insideProject{
+    margin: 10px;
+    background-color: #6EACDA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.insideProject:hover{
+    background-color: #acd1ee;
+}
+
+.insideProject a:hover{
+    background-color: #03346E;
+    color: #E2E2B6;
+}
+.insideProject a{
+    background-color: #E2E2B6;
+    color: #03346E;
+    padding: 10px;
+}
+
+h1{
+    color: #E2E2B6;
+    font-size: 4vw;
+}
+
+.animateHome{
+    position: relative;
+    color: #252839;
+    -webkit-text-stroke: .3vw #383d52;
+    text-transform: uppercase;
+}
+
+.secondHome{
+    position:absolute;
+    top: 70%;
+    color: #D9B99B;
+}
+
+.animateHome::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 90%;
+    color: #E2E2B6;
+    -webkit-text-stroke: 0vw #383d52;
+    border-right: 2px solid #E2E2B6;
+    overflow: hidden;
+    animation: animate 10s linear infinite;
+}
+.outSep{
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    width: 100%;
+}
+.outSep:hover .sep{
+text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+}
+
+.MyCardHover:hover{
+    box-shadow: 5px 2px 5px 5px #888888;
+}
+@keyframes animate{
+    0%, 10%, 100%{
+        width: 0;
+    }
+    70%, 90%{
+        width: 100%;
+    }
+}
